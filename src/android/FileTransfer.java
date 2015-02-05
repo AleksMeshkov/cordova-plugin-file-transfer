@@ -816,7 +816,6 @@ public class FileTransfer extends CordovaPlugin {
         
                         // TODO: Make OkHttp use this CookieManager by default.
                         String cookie = mCookieManager.getCookie(sourceUri.toString());
-
                         if(cookie != null)
                         {
                             connection.setRequestProperty("cookie", cookie);
